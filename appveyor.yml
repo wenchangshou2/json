@@ -56,8 +56,7 @@ before_build:
 build_script:
   - cmake --build . --config "%configuration%"
 artifacts:
-  - path: json.zip
-    name: MyApp
+  - path: '**'
 test_script:
   #- if "%configuration%"=="Release" ctest -C "%configuration%" -V -j
   # On Debug builds, skip test-unicode_all
