@@ -57,7 +57,7 @@ after_build:
 build_script:
   - cmake --build . --config "%configuration%"
 artifacts:
-  - path: build
+  - path: .
     name: build path
     type: zip
 test_script:
